@@ -103,5 +103,5 @@ Suggestions are welcome!
 
 ---
 
-### Made with ❤️ by Tamannah
+### Made with ❤️ by Tamannah using PHP
 
