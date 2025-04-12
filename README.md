@@ -1,100 +1,107 @@
-# TripTreasure-Personalized_Travel_Itinerary_Planner_full-stack-website
- TripTreasure is a full-stack web application that simplifies travel planning. It allows users to explore, book, and manage travel packages with payment integration, while admins can manage packages, bookings, and inquiries efficiently.
+# 🌍 TripTreasure – Personalized Travel Planner
+
+**TripTreasure** is a web-based travel management platform designed to help users explore destinations, book customized travel packages, and plan their journeys with ease. The system includes user and admin panels, secure authentication, and features like blog posts, package management, booking tracking, and more.
 
 ---
 
-## Features
+## ✨ Features
 
-### User Panel
-- Explore travel packages with detailed descriptions.
-- Book travel packages easily with an integrated booking system.
-- Manage bookings (cancel bookings and check their status as 'Done' or 'Confirmed').
-- Integrated payment system for seamless transactions.
-- Contact admin via inquiries and receive responses.
-- Personalized greetings for logged-in users (e.g., "Hi Tamanna!").
+### 🧭 User Side
+- Explore travel packages with images and descriptions
+- Book packages and view booking status (Confirmed, Done, Canceled)
+- Cancel bookings if needed
+- Register/Login system with session tracking
+- Read travel blogs and explore trip inspirations
+- Contact form to send inquiries
+- See a greeting like: `Hii Tamanna!` when logged in
 
-### Admin Panel
-- Add, edit, and delete travel packages.
-- View, confirm, or cancel user bookings.
-- Mark bookings as 'Done' or 'Confirmed'.
-- Manage and respond to user inquiries.
-- Customize website settings (change logo, name, or admin credentials).
-
-
-## Login
--username: tamannaparmar
--password: Tamanna@10
-
----
-
-## Technologies Used
-
-### Frontend
-- **HTML**: For the website structure.
-- **CSS**: For styling and layouts.
-- **JavaScript**: For interactivity and dynamic content.
-- **Bootstrap**: For responsive design.
-
-### Backend
-- **PHP**: For server-side processing and logic.
-- **MySQL**: For database management.
-
-### Server Environment
-- **XAMPP**: Local development environment for PHP and MySQL.
-
-### Development Tools
-- **Text Editor**: Visual Studio Code (VS Code).
-- **Database Management**: phpMyAdmin ([http://localhost/phpmyadmin](http://localhost/phpmyadmin)).
+### 🔐 Admin Panel
+- Secure login for admin
+- Add, update, and manage travel packages
+- View, confirm, or mark bookings as done or canceled
+- Manage user inquiries
+- Upload blogs with images
+- Customize website settings:
+  - Change site name
+  - Upload new logo
+  - Update admin credentials
 
 ---
 
-## How to Use This Project
+## 🛠️ Technologies Used
 
-### Prerequisites
-1. Download and install [XAMPP](https://www.apachefriends.org/index.html).
-2. Install [Visual Studio Code (VS Code)](https://code.visualstudio.com/).
-3. Clone the repository:
-   ```bash
-   git clone https://github.com/your-repo-url/triptreasure.git
+- **Frontend:** HTML, CSS, JavaScript
+- **Backend:** PHP
+- **Database:** MySQL (phpMyAdmin)
+- **Server:** WAMP Server (Apache 2.4.58, PHP 8.2.12, MySQL 15.1)
+- **IDE:** Microsoft Edge + Code Editor
+
+---
+
+## ⚙️ Setup Instructions (Local)
+
+1. Install **WAMP** or **XAMPP**
+2. Copy the project folder into the `www` (or `htdocs`) directory
+3. Start Apache and MySQL
+4. Import the `triptreasure.sql` file into **phpMyAdmin**
+5. Update database credentials in `config.php` if necessary
+6. Visit `http://localhost/TripTreasure/` in your browser
+
+---
+
+## 📁 Project Structure
+
+```
+TripTreasure/
+├── index.html
+├── login.php
+├── signup.php
+├── admin/
+│   ├── index.php
+│   ├── add-package.php
+│   ├── manage-bookings.php
+│   └── settings.php
+├── blogs/
+│   ├── add-blog.php
+│   └── blog-list.php
+├── contact.php
+├── css/
+├── js/
+├── images/
+└── database/
+    └── triptreasure.sql
+```
 
 
-# Project Structure
-  triptreasure/
-├── admin/             # Admin panel files
-├── assets/            # Static assets like icons or reusable components
-├── build/             # Build files (e.g., minified CSS/JS)
-├── classes/           # PHP classes for object-oriented programming
-├── css/               # Stylesheets
-├── database/          # Database backup and configuration
-├── dist/              # Distribution files (optimized for deployment)
-├── font/              # Fonts used in the project
-├── images/            # Image assets
-├── inc/               # Included reusable PHP files (header, footer, etc.)
-├── js/                # JavaScript files
-├── libs/              # External libraries or frameworks
-├── payment/           # Payment-related files and configurations
-├── plugins/           # Plugins used in the project
-├── style/             # Additional stylesheets (if needed)
-├── uploads/           # Uploaded files
-├── video/             # Video files
-├── 404.html           # Custom 404 error page
-├── about.html         # About page
-├── bookform.php       # Booking form
-├── config.php         # Database configuration
-├── editacc.php        # Edit account details
-├── engcourtium.php    # English Courtium package details
-├── engdharmashala.php # English Dharmashala package details
-├── engnaladeraha.php  # English Naldera package details
-├── index.php          # Main entry point of the project
-├── initialize.php     # Initialization script
-├── login.php          # Login form
-├── logout.php         # Logout script
-├── malanali.php       # Malanali package details
-├── my_acc.php         # User's account page
-├── packages.php       # List of packages
-├── packages2.php      # Additional packages
-├── policy.php         # Policies page
-├── portal.php         # User/Admin portal
-├── rate_review.php    # Rate and review page
-├── viewpackages.php   # View package details
+
+
+---
+
+## 🔒 Admin Credentials (for demo)
+
+```
+Username: tamannparmar
+Password: Tamanna@10
+```
+
+> ⚠️ Change credentials in production environment for security.
+
+---
+
+## 🚫 Limitations
+
+- No destination-based search or filters
+- Price-wise filtering is not implemented
+- Currently supports a limited number of countries
+
+---
+
+## 📬 Feedback
+
+Feel free to fork, contribute, or open issues.  
+Suggestions are welcome!
+
+---
+
+### Made with ❤️ by Tamanna Parmar & Team
 
