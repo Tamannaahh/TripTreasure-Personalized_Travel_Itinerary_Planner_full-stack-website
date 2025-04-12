@@ -103,5 +103,5 @@ Suggestions are welcome!
 
 ---
 
-### Made with ❤️ by Tamanna Parmar & Team
+### Made with ❤️ by Tamanna Parmar 
 
